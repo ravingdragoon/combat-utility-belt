@@ -369,7 +369,7 @@ export class CUBPuter extends FormApplication {
         const config = data.config;
         const players = game.users.filter(u => !u.isGM);
         const username = game.user.name;
-        const randomPlayer = players.length ? players[Math.floor(Math.random() * players.length)] : game.user.name;
+        const randomPlayer = players.length ? players[Math.floor(randomNumber() * players.length)] : game.user.name;
         const greetings = [
             `Greetings ${game.user.name}, how would you like to kill your players today? ... I meant player-characters of course! You believe me right? Right?!`,
             `Hello! You thought I was going to make a joke about killing your players? Hah jokes on you! ${randomPlayer.name} does look a bit shifty though...`,
