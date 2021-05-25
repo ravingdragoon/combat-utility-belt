@@ -1,4 +1,6 @@
 # From https://github.com/League-of-Foundry-Developers/FoundryVTT-Module-Template/blob/master/.github/workflows/main.yml
+workflow_dispatch
+
 name: Release Creation
 
 on: 
