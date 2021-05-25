@@ -384,7 +384,7 @@ export class CUBPuter extends FormApplication {
         const loginInput = config.startup ? username : ``;
         const passwordPrompt = config.startup ? `<br/> > Password: ` : ``;
         const passwordInput = config.startup ? `*******` : ``;
-        const greetingOutput = config.greeting ? `<span id="greetings-output">> ${greetings[Math.floor(Math.random() * greetings.length)]} <a id="clear-greeting">--Remove this message?--</a><br /></span>` : ``;
+        const greetingOutput = config.greeting ? `<span id="greetings-output">> ${greetings[Math.floor(randomNumber() * greetings.length)]} <a id="clear-greeting">--Remove this message?--</a><br /></span>` : ``;
         const instructionsPrompt = config.instructions ? `<span id="instructions-prompt"><br />${username}@cubputer:~$ </span>` : ``;
         const instructionsInput = config.instructions ? `<span id="instructions-input">./instructions.sh</span>` : ``;
         const instructionsOutput = config.instructions ? `<span id="instructions-output"><br />> Select a gadget to get started. You can read more information about the gadget, or change its settings. With our powers combined the players stand no chance! <a id="clear-instructions">--Remove this message?--</a></span><br />` : ``;
