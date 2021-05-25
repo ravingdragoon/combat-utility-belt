@@ -2,6 +2,7 @@
 name: Release Creation
 
 on: 
+  workflow_dispatch:
   release:
     types: [published]
 
@@ -53,3 +54,4 @@ jobs:
         artifacts: './module.json,./module.zip'
         tag: latest
         body: ${{ github.event.release.body }}
+    - name: Bridgecrew Github Action
