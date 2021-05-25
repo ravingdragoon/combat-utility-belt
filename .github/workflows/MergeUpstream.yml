@@ -1,6 +1,6 @@
 name: Mark stale issues and pull requests
 
-git remote add upstream https://github.com/death-save/combat-utility-belt.git
-
 on:
   workflow_dispatch:
+
+git remote add upstream https://github.com/death-save/combat-utility-belt.git
