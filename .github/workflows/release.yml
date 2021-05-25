@@ -1,8 +1,9 @@
 # From https://github.com/League-of-Foundry-Developers/FoundryVTT-Module-Template/blob/master/.github/workflows/main.yml
 name: Release Creation
 
-on: 
+on:
   workflow_dispatch:
+  
   release:
     types: [published]
 
